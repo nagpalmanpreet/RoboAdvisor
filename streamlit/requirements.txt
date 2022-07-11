@@ -1,0 +1,12 @@
+pandas
+holoviews
+seaborn
+hvplot
+numpy
+pathlib
+PIL
+holoviews
+yfinance
+numpy
+matplotlib.pyplot
+bokeh>=2.4.0,<=2.4.1 
