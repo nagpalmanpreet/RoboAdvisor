@@ -8,5 +8,5 @@ Pillow
 holoviews
 yfinance
 numpy
-matplotlib.pyplot
+matplotlib
 bokeh>=2.4.0,<=2.4.1 
