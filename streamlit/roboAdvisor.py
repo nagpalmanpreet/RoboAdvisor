@@ -13,7 +13,7 @@ from PIL import Image
 st.set_page_config(layout="wide",initial_sidebar_state='collapsed')
 
 # Display RoboAvsior image
-image = Image.open('../Resources/images/RoboAdvisor.png')
+image = Image.open('./Resources/images/RoboAdvisor.png')
 st.image(image)
 st.markdown("# Robo Advisor Lite ")
 
