@@ -4,7 +4,7 @@ seaborn
 hvplot
 numpy
 pathlib
-PIL
+Pillow
 holoviews
 yfinance
 numpy
