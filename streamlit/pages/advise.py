@@ -80,6 +80,7 @@ else:
                ticker = yf.Tickers(ticker_list)
                st.write(ticker)
                my_df = ticker.history(period="1y")
+               st.write(my_df)
                my_df = my_df['Close']
                my_df.columns = user_choice
                st.write(my_df)
