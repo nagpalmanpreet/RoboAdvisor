@@ -29,6 +29,7 @@ asx_df = pd.read_csv(asx_file_path)
 asx_df = asx_df[['Company', 'Code']]
 asx_dict = dict(asx_df.values)
 companyList = asx_dict.keys()
+st.write(asx_dict)
 
 # If state is set
 if 'close_df' in st.session_state:
@@ -77,7 +78,8 @@ else:
                st.write(ticker_list)
                # Get Last 5 years of data from yahoo finnance api for the user selected tickers and filter to get only the Closed proces
                ticker = yf.Tickers(ticker_list)
-               my_df = ticker.history(period="5y")
+               st.write(ticker)
+               my_df = ticker.history(period="1y")
                my_df = my_df['Close']
                my_df.columns = user_choice
                st.write(my_df)
