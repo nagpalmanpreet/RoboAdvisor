@@ -5,7 +5,7 @@ from pathlib import Path
 import yfinance as yf
 import numpy as np
 from MCForecastTools import MCSimulation
-from yahoofinancials import YahooFinancials
+#from yahoofinancials import YahooFinancials
 from PIL import Image
 import hvplot.pandas
 import matplotlib.pyplot as plt
@@ -18,13 +18,13 @@ import seaborn as sns
 # from MCForecastTools2 import MCSimulation2
 
 # Display image
-image = Image.open('../Resources/images/RoboAdvisor.png')
+image = Image.open('./Resources/images/RoboAdvisor.png')
 st.image(image)
 st.markdown("# Robo Advisor Lite ")
 st.write('Welcome to New Way of Trading')
 
 # Read master file to populate drop down for multi choice form
-asx_file_path = Path('../Resources/master.csv')
+asx_file_path = Path('./Resources/master.csv')
 asx_df = pd.read_csv(asx_file_path)
 asx_df = asx_df[['Company', 'Code']]
 asx_dict = dict(asx_df.values)

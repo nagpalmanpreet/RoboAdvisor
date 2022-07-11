@@ -29,8 +29,8 @@ if 'loadImages' in st.session_state:
 else :
 
     # Initialize Dataframes
-    asx_complete_df = pd.read_csv(Path('../Resources/master.csv')) 
-    visual_comparison_df = pd.read_csv(Path('../Resources/visual_comparison.csv')) 
+    asx_complete_df = pd.read_csv(Path('./Resources/master.csv')) 
+    visual_comparison_df = pd.read_csv(Path('./Resources/visual_comparison.csv')) 
 
     # Concat .AX to each ticker
     asx_complete_df.loc[:,'asx_code'] = '.AX' 
