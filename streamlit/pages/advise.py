@@ -74,7 +74,7 @@ else:
                # Get the ASX tickers for user selected companies
                for company in user_choice:
                     ticker_list.append(asx_dict[company]+'.ax')
-
+               st.write(ticker_list)
                # Get Last 5 years of data from yahoo finnance api for the user selected tickers and filter to get only the Closed proces
                ticker = yf.Tickers(ticker_list)
                my_df = ticker.history(period="5y")
