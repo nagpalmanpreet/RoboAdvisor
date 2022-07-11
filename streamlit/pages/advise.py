@@ -80,7 +80,7 @@ else:
                my_df = ticker.history(period="5y")
                my_df = my_df['Close']
                my_df.columns = user_choice
-
+               st.write(my_df)
                # Plot 5 years closing prices 
                my_df_plot = my_df.hvplot.line(title='How your selected companies are performing', ylabel='Price in AUD', xlabel='Date',height=500,
                                     width=1000)
